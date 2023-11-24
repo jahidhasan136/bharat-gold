@@ -42,6 +42,8 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.16);
   background: rgba(255, 255, 255, 0.1);
   padding: 16px;
+  color: white;
+  padding-left: 40px;
 }
 .header-input input::placeholder {
   color: #fff;
@@ -145,9 +147,6 @@ header {
 }
 
 .client-cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 45px;
   margin-left: calc(16%);
 }
 .client-single-card {
@@ -186,6 +185,17 @@ header {
 .star {
   color: #f17332;
   margin-bottom: 10px;
+}
+
+.swiper-pagination {
+  position: static !important;
+  margin-top: 65px;
+}
+
+.swiper-pagination-bullet {
+  width: 62px !important;
+  height: 4px !important;
+  border-radius: 15% !important;
 }
 
 /* news section */
