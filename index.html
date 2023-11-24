@@ -34,27 +34,43 @@
   </head>
   <body>
     <!-- header section -->
-    <header>
+    <div>
       <img class="banner-bg" src="./assets/images/banner_bg.svg" alt="" />
       <img class="banner-bg-2" src="./assets/images/banner_phone.svg" alt="" />
-      <div
-        class="d-flex align-items-center justify-content-between container header"
-      >
-        <div>
-          <img src="./assets/images/logo.svg" alt="" />
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav-res" id="navbarScroll">
+            <div class="d-lg-flex d-none">
+              <img src="./assets/images/logo.svg" alt="" />
+            </div>
+            <div class="header-content">
+              <a href="#">Home</a>
+              <a href="#">Priceing</a>
+              <a href="#">Refund Policy</a>
+              <a href="#">Download APK</a>
+            </div>
+            <div class="header-input">
+              <img src="./assets/images/search-icon.svg" alt="" />
+              <input type="text" placeholder="Search here..." />
+            </div>
+          </div>
+          <div class="d-lg-none">
+            <img src="./assets/images/logo.svg" alt="" />
+          </div>
         </div>
-        <div class="header-content">
-          <a href="#">Home</a>
-          <a href="#">Priceing</a>
-          <a href="#">Refund Policy</a>
-          <a href="#">Download APK</a>
-        </div>
-        <div class="header-input">
-          <img src="./assets/images/search-icon.svg" alt="" />
-          <input type="text" placeholder="Search here..." />
-        </div>
-      </div>
-    </header>
+      </nav>
+    </div>
 
     <!-- banner section -->
     <section class="banner container">
@@ -114,7 +130,7 @@
     <!-- clients say section -->
 
     <section class="clients">
-      <div class="clients-content">
+      <div class="clients-content container">
         <h2>
           Hear What Our Satisfied <br />
           Clients Have to say
@@ -282,38 +298,6 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="client-single-card">
-                  <img
-                    class="client-single-card-img"
-                    src="./assets/images/quote.svg"
-                    alt=""
-                  />
-                  <div class="client-signle-card-content">
-                    <div class="star">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at is layout. The point of using Lorem Ipsum is that it
-                      has a more-or-less normal distribution of letters, as
-                      opposed to using Content here.
-                    </p>
-                    <div class="client-profile">
-                      <img src="./assets/images/client-3.svg" alt="" />
-                      <div>
-                        <h4>Eleanor Pena</h4>
-                        <p>Founder of FreeUp</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -324,57 +308,104 @@
 
     <!-- latest news -->
     <section class="container latest-news">
-      <h2>Our Latest News</h2>
+      <div class="latest-news-2">
+        <h2>Our Latest News</h2>
+        <div class="button-swiper">
+          <div class="button-prev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="button-next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
       <div class="news-all-cards">
-        <div class="news-card">
-          <img src="./assets/images/news-1.svg" alt="" />
-          <div class="news-content">
-            <p class="news-date">
-              <img src="./assets/images/time-icon.svg" alt="" />
-              <span>April 6, 2021</span>
-            </p>
-            <h3>Every Sunday, our extras refine their roles and train...</h3>
-            <p class="news-details">
-              Established Fact That A Reader will destracted by the readable
-              content of a apage
-            </p>
-            <button>
-              Learn More <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-        <div class="news-card">
-          <img src="./assets/images/news-1.svg" alt="" />
-          <div class="news-content">
-            <p class="news-date">
-              <img src="./assets/images/time-icon.svg" alt="" />
-              <span>April 6, 2021</span>
-            </p>
-            <h3>Every Sunday, our extras refine their roles and train...</h3>
-            <p class="news-details">
-              Established Fact That A Reader will destracted by the readable
-              content of a apage
-            </p>
-            <button>
-              Learn More <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-        <div class="news-card">
-          <img src="./assets/images/news-1.svg" alt="" />
-          <div class="news-content">
-            <p class="news-date">
-              <img src="./assets/images/time-icon.svg" alt="" />
-              <span>April 6, 2021</span>
-            </p>
-            <h3>Every Sunday, our extras refine their roles and train...</h3>
-            <p class="news-details">
-              Established Fact That A Reader will destracted by the readable
-              content of a apage
-            </p>
-            <button>
-              Learn More <i class="fa-solid fa-chevron-right"></i>
-            </button>
+        <div class="swiper latestSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="news-card">
+                <img src="./assets/images/news-1.svg" alt="" />
+                <div class="news-content">
+                  <p class="news-date">
+                    <img src="./assets/images/time-icon.svg" alt="" />
+                    <span>April 6, 2021</span>
+                  </p>
+                  <h3>
+                    Every Sunday, our extras refine their roles and train...
+                  </h3>
+                  <p class="news-details">
+                    Established Fact That A Reader will destracted by the
+                    readable content of a apage
+                  </p>
+                  <button>
+                    Learn More <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="news-card">
+                <img src="./assets/images/news-2.svg" alt="" />
+                <div class="news-content">
+                  <p class="news-date">
+                    <img src="./assets/images/time-icon.svg" alt="" />
+                    <span>April 6, 2021</span>
+                  </p>
+                  <h3>
+                    Every Sunday, our extras refine their roles and train...
+                  </h3>
+                  <p class="news-details">
+                    Established Fact That A Reader will destracted by the
+                    readable content of a apage
+                  </p>
+                  <button>
+                    Learn More <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="news-card">
+                <img src="./assets/images/news-3.svg" alt="" />
+                <div class="news-content">
+                  <p class="news-date">
+                    <img src="./assets/images/time-icon.svg" alt="" />
+                    <span>April 6, 2021</span>
+                  </p>
+                  <h3>
+                    Every Sunday, our extras refine their roles and train...
+                  </h3>
+                  <p class="news-details">
+                    Established Fact That A Reader will destracted by the
+                    readable content of a apage
+                  </p>
+                  <button>
+                    Learn More <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="news-card">
+                <img src="./assets/images/news-1.svg" alt="" />
+                <div class="news-content">
+                  <p class="news-date">
+                    <img src="./assets/images/time-icon.svg" alt="" />
+                    <span>April 6, 2021</span>
+                  </p>
+                  <h3>
+                    Every Sunday, our extras refine their roles and train...
+                  </h3>
+                  <p class="news-details">
+                    Established Fact That A Reader will destracted by the
+                    readable content of a apage
+                  </p>
+                  <button>
+                    Learn More <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -405,7 +436,7 @@
             <a href="#">Download APK</a>
           </div>
         </div>
-        <div>
+        <div class="footer-information">
           <h4>Information</h4>
           <div class="footer-link">
             <a href="#">Privacy & Cookie Policy</a>
@@ -447,11 +478,35 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+        // slidesPerView: 1,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1920: {
+            slidesPerView: 3,
+          },
+        },
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+      });
+      var swiper2 = new Swiper(".latestSwiper", {
+        // slidesPerView: 3,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1920: {
+            slidesPerView: 3,
+          },
+        },
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
         },
       });
     </script>
