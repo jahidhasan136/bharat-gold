@@ -9,10 +9,6 @@
 p {
   margin-bottom: 0 !important;
 }
-
-/* header {
-  position: relative;
-} */
 .nav-res {
   display: flex;
   justify-content: space-between;
@@ -53,6 +49,12 @@ p {
   color: #fff;
 }
 
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .banner-bg {
   position: absolute;
   top: 0;
@@ -67,9 +69,9 @@ p {
   z-index: -1;
 }
 
-.banner-content {
+/* .banner-content {
   margin-top: 256px;
-}
+} */
 
 .banner-content h2 {
   font-size: 72px;
@@ -88,7 +90,7 @@ p {
 /* service section css code */
 
 .service {
-  margin-top: 435px;
+  margin-top: 120px;
 }
 .service h1 {
   text-align: center;
@@ -372,7 +374,7 @@ footer {
     top: 0;
     right: 0;
     z-index: -2;
-    width: 50%;
+    width: 60%;
   }
 
   .banner-bg-2 {
@@ -384,9 +386,9 @@ footer {
   }
 }
 @media (max-width: 1200px) {
-  .banner-content {
+  /* .banner-content {
     margin-top: 150px;
-  }
+  } */
 }
 @media (max-width: 991px) {
   .banner-content h2 {
@@ -408,6 +410,24 @@ footer {
   .service-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .banner-content h2 {
+    font-size: 40px;
+    line-height: normal;
+  }
+  .banner-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+    font-family: "Inter", sans-serif;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .banner-bg {
+    display: none;
+  }
+  .banner img {
+    /* width: 80%; */
   }
 }
 @media (max-width: 768px) {
@@ -443,7 +463,7 @@ footer {
     color: white;
   }
   .service {
-    margin-top: 235px;
+    margin-top: 80px;
   }
   .service h1 {
     text-align: center;
@@ -500,6 +520,18 @@ footer {
     z-index: -1;
     width: 70%;
   }
+  .banner {
+    display: grid;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+  }
+  .banner img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
 }
 @media (max-width: 578px) {
   .footer {
@@ -508,6 +540,9 @@ footer {
     justify-items: left;
   }
   .footer-information {
+    margin-top: 50px;
+  }
+  .footer-site-link {
     margin-top: 50px;
   }
   .banner-content {
@@ -541,5 +576,15 @@ footer {
   }
   .footer {
     padding: 80px 0;
+  }
+  .banner-content br {
+    display: none;
+  }
+  .header-input input {
+    border: 1px solid black;
+    color: black;
+  }
+  .header-input i {
+    color: black;
   }
 }

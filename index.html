@@ -36,8 +36,49 @@
     <!-- header section -->
     <div>
       <img class="banner-bg" src="./assets/images/banner_bg.svg" alt="" />
-      <img class="banner-bg-2" src="./assets/images/banner_phone.svg" alt="" />
-      <nav class="navbar navbar-expand-lg navbar-light container">
+
+      <nav class="navbar navbar-expand-lg navbar-light container d-lg-none">
+        <div class="container-fluid d-flex justify-content-between">
+          <div>
+            <img class="w-75" src="./assets/images/logo.svg" alt="" />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Priceing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Refund Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Download APK</a>
+              </li>
+            </ul>
+            <div class="header-input">
+              <img src="./assets/images/search-icon.svg" alt="" />
+              <input type="text" placeholder="Search here..." />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <nav
+        class="navbar navbar-expand-lg navbar-light container d-none d-lg-flex"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -85,6 +126,7 @@
           readable content of a page when looking at its layout.
         </p>
       </div>
+      <img class="" src="./assets/images/banner-phone.png" alt="" />
     </section>
 
     <!-- service section -->
@@ -324,7 +366,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="news-card">
-                <img src="./assets/images/news-1.svg" alt="" />
+                <img class="w-100" src="./assets/images/news-1.svg" alt="" />
                 <div class="news-content">
                   <p class="news-date">
                     <img src="./assets/images/time-icon.svg" alt="" />
@@ -345,7 +387,7 @@
             </div>
             <div class="swiper-slide">
               <div class="news-card">
-                <img src="./assets/images/news-2.svg" alt="" />
+                <img class="w-100" src="./assets/images/news-2.svg" alt="" />
                 <div class="news-content">
                   <p class="news-date">
                     <img src="./assets/images/time-icon.svg" alt="" />
@@ -366,7 +408,7 @@
             </div>
             <div class="swiper-slide">
               <div class="news-card">
-                <img src="./assets/images/news-3.svg" alt="" />
+                <img class="w-100" src="./assets/images/news-3.svg" alt="" />
                 <div class="news-content">
                   <p class="news-date">
                     <img src="./assets/images/time-icon.svg" alt="" />
@@ -427,7 +469,7 @@
             <i class="fa-brands fa-linkedin-in"></i>
           </div>
         </div>
-        <div>
+        <div class="footer-site-link">
           <h4>Links</h4>
           <div class="footer-link">
             <a href="#">Home</a>
