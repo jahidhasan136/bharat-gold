@@ -9,8 +9,12 @@
 p {
   margin-bottom: 0 !important;
 }
-.header {
+header {
   position: relative;
+}
+
+.header {
+  padding-top: 15px;
 }
 
 .header-content {
@@ -149,7 +153,9 @@ p {
 .client-single-card {
   position: relative;
   border-radius: 16px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
+  background-color: #fff;
+  filter: drop-shadow(10px 12px 60px rgba(0, 0, 0, 0.1));
 }
 .client-signle-card-content {
   padding: 30px;
@@ -180,4 +186,126 @@ p {
 .star {
   color: #f17332;
   margin-bottom: 10px;
+}
+
+/* news section */
+
+.latest-news {
+  margin-top: 124px;
+}
+
+.latest-news h2 {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 62px;
+  color: #1a1a2a;
+  margin-bottom: 59px;
+}
+
+.news-all-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.news-card {
+  border-radius: 8.674px;
+  border: 1px solid #f2f2f2;
+}
+.news-card:hover {
+  filter: drop-shadow(10px 12px 60px rgba(0, 0, 0, 0.1));
+}
+
+.news-card img {
+  margin-bottom: 12px;
+}
+.news-content {
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+.news-card h3 {
+  color: #1a1a2a;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.news-details {
+  color: #777;
+  line-height: 25px;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+
+.news-content button {
+  background-color: #fff;
+  border: none;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+.news-content button:hover {
+  color: #4a63ff;
+}
+
+/* footer */
+
+footer {
+  margin-top: 120px;
+  background-color: #000419;
+  color: white;
+}
+
+.footer {
+  padding: 142px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-profile p {
+  padding-top: 12px;
+  padding-bottom: 30px;
+  line-height: 30px;
+  font-size: 18px;
+}
+.footer-media {
+  display: flex;
+  gap: 10px;
+}
+.footer-media i {
+  color: #4a63ff;
+  background-color: rgba(255, 255, 255, 0.16);
+  padding: 7px;
+  border-radius: 100%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.footer-media i:hover {
+  background-color: #4a63ff;
+  color: #fff;
+}
+.footer-link {
+  display: grid;
+  gap: 20px;
+  margin-top: 29px;
+}
+.footer-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.footer-location h5 {
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+.footer-location p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
